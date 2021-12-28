@@ -13,18 +13,18 @@ namespace OOLabb1
 
         public override double GetArea()
         {
-            throw new NotImplementedException();
+            return SideLength * SideLength;
         }
 
 
         public override double GetPerimeter()
         {
-            throw new NotImplementedException();
+            return 4 * SideLength;
         }
 
         public override string ToString()
         {
-            return $"This is a square with side length {SideLength}.";
+            return $"This is a square with side length {SideLength}, area {GetArea()} and perimeter length {GetPerimeter()}.";
         }
 
         

@@ -20,12 +20,12 @@ namespace OOLabb1
 
         public override double GetPerimeter()
         {
-            throw new NotImplementedException();
+            return 2 * (Height + Width);
         }
 
         public override string ToString()
         {
-            return $"This is a rectangle with side length {Height} and width {Width}. Ara is {GetArea()} ";
+            return $"This is a rectangle with side length {Height} and width {Width}. Area is {GetArea()} and Perimeter is {GetPerimeter()}";
         }
     }
 }

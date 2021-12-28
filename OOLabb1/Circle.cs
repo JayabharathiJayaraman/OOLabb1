@@ -14,17 +14,17 @@ namespace OOLabb1
 
         public override double GetArea()
         {
-            throw new NotImplementedException();
+            return Math.PI * Radius * Radius;
         }
 
         public override double GetPerimeter()
         {
-            throw new NotImplementedException();
+            return 2 * Math.PI * Radius;
         }
 
         public override string ToString()
         {
-            return $"This is a circle with radius {Radius}.";
+            return $"This is a circle with radius {Radius}. The area is {GetArea()} and the perimeter is {GetPerimeter()}";
         }
     }
 }
