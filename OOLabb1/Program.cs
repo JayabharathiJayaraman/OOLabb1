@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace OOLabb1
 {
@@ -6,7 +7,23 @@ namespace OOLabb1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Square square = new Square(2);
+            Console.WriteLine(square);
+            square.SideLength = 10;
+            Console.WriteLine(square);
+            square.SayHello();
+
+            Console.WriteLine();
+
+            Rectangle rectangle = new Rectangle(2, 4);
+            Console.WriteLine(rectangle);
+            rectangle.SayHello();
+
+            Console.WriteLine();
+
+            Circle circle = new Circle(5);
+            Console.WriteLine(circle);
+            circle.SayHello();
         }
     }
 }
